@@ -4,8 +4,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddTransient<JsonFileProductService>();
 builder.Services.AddControllers();
+builder.Services.AddTransient<JsonFileProductService>();
 
 var app = builder.Build();
 
