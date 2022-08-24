@@ -19,5 +19,16 @@ namespace ContosoCrafts.Controllers
         {
             return _productService.GetProducts()!;
         }
+
+        [Route("rate")]
+        [HttpGet]
+        public ActionResult Get(
+            [FromQuery] string productId,
+            [FromQuery] int rating
+        )
+        {
+            _productService.AddRating(productId, rating);
+            return Ok();
+        }
     }
 }
