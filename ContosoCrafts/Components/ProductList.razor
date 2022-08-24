@@ -4,7 +4,7 @@
 @inject JsonFileProductService ProductService
 
 <div class="card-columns">
-    @foreach (var product in ProductService.GetProducts()!
+    @foreach (var product in ProductService.GetProducts()!)
     {
     <div class="card">
         <img class="card-img" src="@product.Image" width="100" height="100" alt="product_image" />

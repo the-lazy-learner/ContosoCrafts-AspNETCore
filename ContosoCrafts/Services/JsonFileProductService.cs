@@ -35,7 +35,7 @@ namespace ContosoCrafts.Services
         public void AddRating(string productId, int rating)
         {
             var products = GetProducts();
-            var query = products.First(x => x.Id == productId);
+            var query = products!.First(x => x.Id == productId);
 
             if (query.Ratings == null)
             {
