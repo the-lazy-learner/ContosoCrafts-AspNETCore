@@ -3,7 +3,7 @@
 @using ContosoCrafts.Services
 @inject JsonFileProductService ProductService
 
-<div class="card-columns">
+<div class="card-columns row row-cols-3 row-cols-md-3 row-cols-sm-2 g-4">
     @foreach (var product in ProductService.GetProducts()!)
     {
         <div class="card">
