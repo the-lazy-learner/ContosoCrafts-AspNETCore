@@ -56,7 +56,7 @@ namespace ContosoCrafts.Services
                         SkipValidation = true,
                         Indented = true
                     }),
-                    products
+                    products!
                 );
             }
         }
